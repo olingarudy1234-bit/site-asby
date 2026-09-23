@@ -1,0 +1,481 @@
+/* ===== STYLE GÉNÉRAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* ===== EN-TÊTE ===== */
+
+header {
+    background: #ffffff;
+    text-align: center;
+    padding: 25px 15px 20px;
+    border-bottom: 5px solid #00843d;
+}
+
+.logo {
+    width: 180px;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* ===== MENU ===== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #00843d;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 8px 5px;
+}
+
+nav a:hover {
+    color: #f5c400;
+}
+
+/* ===== ACCUEIL ===== */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #00843d,
+        #159447
+    );
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 25px 100px;
+}
+
+.hero h2 {
+    color: #ffffff;
+    font-size: 42px;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.hero .slogan {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero p:not(.slogan) {
+    color: #ffffff;
+    font-size: 20px;
+    max-width: 850px;
+    margin: 0 auto 18px;
+}
+
+/* ===== BOUTON ===== */
+
+.bouton {
+    display: inline-block;
+    margin-top: 25px;
+    background: #f5c400;
+    color: #222;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 15px 28px;
+    border-radius: 8px;
+}
+
+.bouton:hover {
+    background: #ffffff;
+}
+
+/* ===== SECTIONS ===== */
+
+section:not(.hero) {
+    padding: 70px 25px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section:not(.hero) h2 {
+    color: #00843d;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section:not(.hero) p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===== PIED DE PAGE ===== */
+
+footer {
+    background: #00843d;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+footer p:last-child {
+    color: #f5c400;
+    font-weight: bold;
+}
+
+/* ===== VERSION TÉLÉPHONE ===== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        width: 130px;
+        margin-bottom: 8px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 6px 4px;
+    }
+
+    .hero {
+        padding: 55px 18px 65px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero .slogan {
+        font-size: 22px;
+    }
+
+    .hero p:not(.slogan) {
+        font-size: 17px;
+    }
+
+    .bouton {
+        font-size: 17px;
+        padding: 13px 22px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 20px;
+    }
+
+    section:not(.hero) h2 {
+        font-size: 27px;
+    }
+
+    section:not(.hero) p {
+        font-size: 17px;
+    }
+}
+/* =========================
+   SECTION À PROPOS
+========================= */
+
+.about-section {
+    background: #f5f8f5;
+    padding: 80px 25px;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-title p {
+    color: #00843d;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.about-title h2 {
+    color: #00843d;
+    font-size: 38px;
+    margin: 0;
+}
+
+.title-line {
+    width: 70px;
+    height: 4px;
+    background: #f5c400;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+
+/* INTRODUCTION */
+
+.about-introduction {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.about-introduction h3 {
+    color: #00843d;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.about-introduction p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* CARTES */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.about-card {
+    background: white;
+    padding: 25px 18px;
+    text-align: center;
+    border-radius: 15px;
+    border-top: 4px solid #00843d;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.about-card strong {
+    display: block;
+    color: #00843d;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.about-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* BLOCS */
+
+.about-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.about-content h3 {
+    color: #00843d;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TERRITOIRES */
+
+.territories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.territories span {
+    background: #e5f4eb;
+    color: #00843d;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 55px 15px;
+    }
+
+    .about-title h2 {
+        font-size: 30px;
+    }
+
+    .about-introduction {
+        padding: 25px 18px;
+    }
+
+    .about-introduction h3 {
+        font-size: 21px;
+    }
+
+    .about-introduction p {
+        font-size: 16px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-card {
+        padding: 25px 20px;
+    }
+
+    .about-content {
+        padding: 25px 20px;
+    }
+
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .territories {
+        justify-content: center;
+    }
+
+}
+.about-block ul {
+    padding-left: 25px;
+    margin: 15px 0 0;
+}
+
+.about-block li {
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .about-block li {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+}
+/* =========================
+   GALERIE ASBY
+========================= */
+
+.gallery-section {
+    background: #f5f8f5;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    color: #00843d;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.gallery-intro {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.gallery {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery img {
+        height: 160px;
+    }
+}
